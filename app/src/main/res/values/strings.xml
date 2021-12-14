@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MedoCare</string>
+    <string name="greeting">Welcome to MedoCare!</string>
+    <string name="login">Login</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="todo">TODO</string>
+    <string name="signup">signup</string>
+    <string name="register_for_account">Register for account</string>
 </resources>

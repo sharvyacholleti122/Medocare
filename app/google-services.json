@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518689483423",
+    "project_id": "medocare-a888f",
+    "storage_bucket": "medocare-a888f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518689483423:android:4db78434ca8e97fc7f50aa",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.aad.W9515674"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518689483423-n969glrrdvafiemce24ujtsiljccn5ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgoDUAacptVKzYw78oMoggeL0_xMZyQaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518689483423-n969glrrdvafiemce24ujtsiljccn5ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
