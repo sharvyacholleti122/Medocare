@@ -8,4 +8,9 @@
     <string name="todo">TODO</string>
     <string name="signup">signup</string>
     <string name="register_for_account">Register for account</string>
+    <string name="services">Services</string>
+    <string name="search_by_specilization">Search By Specilization</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="consult_doctor">Consult Doctor</string>
+    <string name="remidy">Remidy</string>
 </resources>
