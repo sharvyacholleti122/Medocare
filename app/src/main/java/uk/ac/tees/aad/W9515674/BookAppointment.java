@@ -58,6 +58,8 @@ public class BookAppointment extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),Doctors.class);
                 intent.putExtra("name",hospitals.get(position).getName());
                 intent.putExtra("number",hospitals.get(position).getNumber());
+                intent.putExtra("lat",hospitals.get(position).getLat());
+                intent.putExtra("lng",hospitals.get(position).getLng());
                 startActivity(intent);
             }
         });
@@ -99,6 +101,24 @@ class Hospital{
     String name;
     String number;
     String image;
+    double lat;
+    double lng;
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
+    }
 
     public String getName() {
         return name;

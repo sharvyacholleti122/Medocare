@@ -36,6 +36,18 @@ public class Doctors extends AppCompatActivity {
         TextView hosName = findViewById(R.id.hos);
         doctors = new ArrayList<Doctor>();
 
+        TextView text = findViewById(R.id.locationOnMap);
+
+        text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),HospitalLocation.class);
+                intent.putExtra("lat",getIntent().getDoubleExtra("lat",0));
+                intent.putExtra("lng",getIntent().getDoubleExtra("lng",0));
+                startActivity(intent);
+            }
+        });
+
         hosName.setText(getIntent().getStringExtra("name"));
         listView = findViewById(R.id.list_view);
 

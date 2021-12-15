@@ -24,4 +24,6 @@
     <string name="checkout_latest_info">Checkout Latest Info</string>
     <string name="world_health_info">World Health Info</string>
     <string name="logout">logout</string>
+    <string name="title_activity_hospital_location">Map</string>
+    <string name="view_in_map">View in map</string>
 </resources>

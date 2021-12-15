@@ -19,7 +19,6 @@ public class Appointment extends AppCompatActivity {
 
     TextView call;
     TextView text;
-
     private DatePicker datePicker;
     private Calendar calendar;
     private TextView dateView;

@@ -42,6 +42,19 @@ tools:context=".Doctors">
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hos" />
+
+    <TextView
+        android:id="@+id/locationOnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_in_map"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/selectdoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toEndOf="@+id/selectdoc"
+        app:layout_constraintTop_toTopOf="@+id/selectdoc" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 <ListView
