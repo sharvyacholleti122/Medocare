@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            startActivity(new Intent(getApplicationContext(),SignupActivity.class));
+                            startActivity(new Intent(getApplicationContext(),Services.class));
                         } else {
                             Toast.makeText(getApplicationContext(),"Unable to login",Toast.LENGTH_LONG).show();
                         }

@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/subheading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/services"
@@ -32,17 +32,17 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
+        android:id="@+id/specilization"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/secondColor"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintBottom_toTopOf="@+id/remidy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+        app:layout_constraintTop_toBottomOf="@+id/consultdoc">
 
         <TextView
             android:id="@+id/bookApp3"
@@ -60,13 +60,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/bookapp"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/secondColor"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintBottom_toTopOf="@+id/consultdoc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,17 +88,17 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout6"
+        android:id="@+id/consultdoc"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/secondColor"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintBottom_toTopOf="@+id/specilization"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/bookapp">
 
         <TextView
             android:id="@+id/bookApp2"
@@ -116,16 +116,16 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout5"
+        android:id="@+id/remidy"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/secondColor"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/specilization">
 
         <TextView
             android:id="@+id/bookApp4"
@@ -141,6 +141,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        android:text="logout"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

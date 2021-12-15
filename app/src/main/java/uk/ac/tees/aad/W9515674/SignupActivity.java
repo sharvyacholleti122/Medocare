@@ -29,6 +29,14 @@ public class SignupActivity extends AppCompatActivity {
         email =findViewById(R.id.email);
         pass = findViewById(R.id.password);
 
+        Button in  = findViewById(R.id.login_btn_signup);
+        in.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+            }
+        });
+
         Button create_acc = findViewById(R.id.createacc);
         create_acc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,16 +58,28 @@ public class SignupActivity extends AppCompatActivity {
             return;
         }
 
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             startActivity(new Intent(getApplicationContext(),Services.class));
                         } else {
-                            Toast.makeText(getApplicationContext(),"Incorrect Details",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),task.getException().toString(),Toast.LENGTH_LONG).show();
                         }
                     }
                 });
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }
