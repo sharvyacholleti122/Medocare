@@ -32,34 +32,6 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/specilization"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/secondColor"
-        app:layout_constraintBottom_toTopOf="@+id/remidy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/consultdoc">
-
-        <TextView
-            android:id="@+id/bookApp3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/search_by_specilization"
-            android:textColor="@android:color/black"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bookapp"
         android:layout_width="0dp"
         android:layout_height="100dp"
@@ -94,7 +66,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/secondColor"
-        app:layout_constraintBottom_toTopOf="@+id/specilization"
+        app:layout_constraintBottom_toTopOf="@+id/remidy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,13 +97,13 @@
         app:layout_constraintBottom_toTopOf="@+id/logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/specilization">
+        app:layout_constraintTop_toBottomOf="@+id/consultdoc">
 
         <TextView
             android:id="@+id/bookApp4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/remidy"
+            android:text="@string/world_health_info"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -147,7 +119,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/mainColor"
-        android:text="logout"
+        android:text="@string/logout"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

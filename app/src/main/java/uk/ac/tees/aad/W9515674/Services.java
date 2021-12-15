@@ -19,6 +19,14 @@ public class Services extends AppCompatActivity {
 
         View book = findViewById(R.id.bookapp);
         View consult = findViewById(R.id.consultdoc);
+        View re = findViewById(R.id.remidy);
+        re.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),News.class));
+            }
+        });
+
 
         consult.setOnClickListener(new View.OnClickListener() {
             @Override

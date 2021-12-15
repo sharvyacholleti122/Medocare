@@ -21,4 +21,7 @@
     <string name="quick_consult">Quick Consult</string>
     <string name="explain_your_problem">Explain your problem</string>
     <string name="consult_a_doctor">Consult a Doctor</string>
+    <string name="checkout_latest_info">Checkout Latest Info</string>
+    <string name="world_health_info">World Health Info</string>
+    <string name="logout">logout</string>
 </resources>
